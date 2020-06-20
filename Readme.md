@@ -2,15 +2,6 @@ This repository contains a Dockerfile which can be used to create a docker image
 
 This product uses software developed by Spread Concepts LLC for use in the Spread toolkit. For more information about Spread, see http://www.spread.org
 
-Spread Licensing
-Spread is licensed under two models:
-
-Open Source
-The Spread Open Source License is similar, but not identical to the BSD license. Specifically, the license includes the requirement that all advertising materials mentioning software that uses Spread display a specific acknowledgement. Please review the Spread Open Source License for more details.
-
-Commercial
-Spread Concepts provides additional licensing options and commercial support for the Spread Toolkit. Please contact us for more information.
-
 The Spread Open-Source License
 Version 1.0
 June 26, 2001
@@ -37,5 +28,3 @@ TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, SPREAD IS PROVIDED UNDER THIS
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COPYRIGHT HOLDER OR ANY OTHER CONTRIBUTOR BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES FOR LOSS OF PROFITS, REVENUE, OR FOR LOSS OF INFORMATION OR ANY OTHER LOSS.
 
 YOU EXPRESSLY AGREE TO FOREVER INDEMNIFY, DEFEND AND HOLD HARMLESS THE COPYRIGHT HOLDERS AND CONTRIBUTORS OF SPREAD AGAINST ALL CLAIMS, DEMANDS, SUITS OR OTHER ACTIONS ARISING DIRECTLY OR INDIRECTLY FROM YOUR ACCEPTANCE AND USE OF SPREAD.
-
-Although NOT REQUIRED, we at Spread Concepts would appreciate it if active users of Spread put a link on their web site to Spread's web site when possible. We also encourage users to let us know who they are, how they are using Spread, and any comments they have through either e-mail (spread@spread.org) or our web site at (http://www.spread.org/comments).
