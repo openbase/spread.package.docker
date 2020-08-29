@@ -1,5 +1,5 @@
 # Use an official debian as parent image
-FROM amd64/debian:stable
+FROM debian:stable
 
 # Prepare dependencies
 RUN apt-get update && apt-get install -y gnupg2 wget

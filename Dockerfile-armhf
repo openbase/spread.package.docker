@@ -1,5 +1,5 @@
 # Use an official debian as parent image
-FROM amd64/debian:stable
+FROM debian:stable
 
 # Setup Spread
 COPY bin/armhf/spread /usr/sbin/
