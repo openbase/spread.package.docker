@@ -1,0 +1,11 @@
+image: openbase/spread:latest
+manifests:
+  - image: openbase/spread:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: openbase/spread:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
