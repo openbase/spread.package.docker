@@ -2,8 +2,8 @@
 FROM debian:stable
 
 # Setup Spread
-COPY /bin/armhf/spread /usr/sbin/
-COPY /etc/spread.conf /etc/
+COPY res/bin/armhf/spread /usr/sbin/
+COPY res/etc/spread.conf /etc/
 
 # Make spread port available
 EXPOSE 4803
