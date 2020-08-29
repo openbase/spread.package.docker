@@ -1,10 +1,10 @@
-image: openbase/spread:latest
+image: openbase/spread:experimental
 manifests:
-  - image: openbase/spread:amd64
+  - image: openbase/spread:experimental-amd64
     platform:
       architecture: amd64
       os: linux
-  - image: openbase/spread:arm32v7
+  - image: openbase/spread:experimental-arm32v7
     platform:
       architecture: arm
       os: linux
