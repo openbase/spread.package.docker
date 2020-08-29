@@ -4,7 +4,7 @@ FROM debian:stable
 RUN mkdir -p /usr/sbin/ && mkdir -p /etc/
 
 # Setup Spread
-COPY res/bin/armhf/spread /usr/sbin/
+COPY res/armhf/spread /usr/sbin/
 COPY res/etc/spread.conf /etc/
 
 # Make spread port available
