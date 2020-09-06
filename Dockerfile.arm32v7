@@ -25,4 +25,4 @@ USER spread
 WORKDIR /home/spread
 
 # Start spread using the default configuration
-CMD exec spread
+CMD exec ["spread", "-c", "/etc/spread.conf"]
