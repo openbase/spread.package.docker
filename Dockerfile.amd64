@@ -1,6 +1,9 @@
 # Use an official debian as parent image
 FROM debian:stable
 
+# Configure labels
+LABEL "com.centurylinklabs.watchtower.enable"="false"
+
 # Prepare dependencies
 RUN apt-get update && apt-get install -y gnupg2 wget
 
