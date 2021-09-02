@@ -1,0 +1,31 @@
+FROM alpine AS builder
+
+# Configure labels
+LABEL "com.centurylinklabs.watchtower.enable"="false"
+
+# Download QEMU, see https://github.com/docker/hub-feedback/issues/1261
+ENV QEMU_URL https://github.com/balena-io/qemu/releases/download/v3.0.0%2Bresin/qemu-3.0.0+resin-arm.tar.gz
+RUN apk add curl && curl -L ${QEMU_URL} | tar zxvf - -C . --strip-components 1
+
+# Use an official debian as parent image
+FROM arm64v8/debian:stable
+
+# Add QEMU
+COPY --from=builder qemu-arm-static /usr/bin
+
+RUN mkdir -p /usr/sbin/ && mkdir -p /etc/
+
+# Setup Spread
+COPY res/arm64/spread /usr/sbin/
+COPY res/etc/spread.conf /etc/
+
+# Make spread port available
+EXPOSE 4803
+
+# Create spread user because spread will not start as root
+RUN groupadd -r spread && useradd --no-log-init -r -g spread spread
+USER spread
+WORKDIR /home/spread
+
+# Start spread using the deyfault configuration
+CMD ["spread", "-c", "/etc/spread.conf"]
